@@ -10,7 +10,7 @@ class FoticosApi extends Component {
     }
 
 componentWillMount(){
-    fetch('https://randomuser.me/api/?results=500').then(results =>{
+    fetch('https://randomuser.me/api/?results=494').then(results =>{
         return results.json();
     }).then(data =>{
         let pictures = data.results.map((pic) =>{
@@ -26,9 +26,11 @@ componentWillMount(){
 
 render(){
     return(
-        <div className="container">
+        <div className="row">
             {this.state.pictures}
-        </div>    
+        </div>  
+ 
+        
     )
 }
 }
